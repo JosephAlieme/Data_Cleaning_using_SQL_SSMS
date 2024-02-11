@@ -4,7 +4,7 @@ Queries used for my Tableau Project
 
 */
 
-USE CovidProject
+USE PortfolioProject
 
 -- 1. 
 
