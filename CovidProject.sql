@@ -7,7 +7,7 @@ Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, 
 
 -- After executing below USE statement, any subsequent queries in this query window will be executed in the CovidProject database.
 
-USE CovidProject
+USE PortfolioProject
 
 --1
 Select *
@@ -31,7 +31,7 @@ order by 1,2
 -- This basically shows the likelihood of dying if you contract covid for people living in Poland (Highest % on 17th May, 2020)
 
 Select Location, date, total_cases,total_deaths, (total_deaths*1.0/total_cases)*100 as DeathPercentage
-From CovidProject..Deaths
+From PortfolioProject..Deaths
 Where location like '%Pola%' 
 AND total_cases is not null 
 AND total_deaths is not null
